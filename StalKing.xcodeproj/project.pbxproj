@@ -1,0 +1,579 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		41CA9268B3811CA57510B168 /* Pods_StalKing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 129C01C7FF857EBC60D4E94E /* Pods_StalKing.framework */; };
+		D113731E258231BD0067DE94 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D113731D258231BD0067DE94 /* GoogleService-Info.plist */; };
+		D1137320258275810067DE94 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D113731F258275810067DE94 /* Constants.swift */; };
+		D116054B25C21F4D00AF1F2C /* SpinnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D116054A25C21F4D00AF1F2C /* SpinnerViewController.swift */; };
+		D116054E25C2294900AF1F2C /* CollectionViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D116054D25C2294900AF1F2C /* CollectionViewControllerExtension.swift */; };
+		D116055025C22B0200AF1F2C /* ProfileViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D116054F25C22B0200AF1F2C /* ProfileViewControllerExtension.swift */; };
+		D116055225C23DAF00AF1F2C /* DbHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D116055125C23DAF00AF1F2C /* DbHelper.swift */; };
+		D128A089259CD30100FA1D4D /* AddNewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D128A088259CD30100FA1D4D /* AddNewViewController.swift */; };
+		D128A08C259DE7B100FA1D4D /* HeaderViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D128A08B259DE7B100FA1D4D /* HeaderViewDelegate.swift */; };
+		D141AAE62593A6F500850390 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D141AAE52593A6F500850390 /* CardView.swift */; };
+		D14989C5256FD9A100EA26A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14989C4256FD9A100EA26A2 /* AppDelegate.swift */; };
+		D14989C7256FD9A100EA26A2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14989C6256FD9A100EA26A2 /* SceneDelegate.swift */; };
+		D14989C9256FD9A100EA26A2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14989C8256FD9A100EA26A2 /* ViewController.swift */; };
+		D14989CC256FD9A100EA26A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D14989CA256FD9A100EA26A2 /* Main.storyboard */; };
+		D14989CE256FD9A400EA26A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D14989CD256FD9A400EA26A2 /* Assets.xcassets */; };
+		D14989D1256FD9A400EA26A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D14989CF256FD9A400EA26A2 /* LaunchScreen.storyboard */; };
+		D14989D9256FDA3F00EA26A2 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14989D8256FDA3F00EA26A2 /* SignUpViewController.swift */; };
+		D14989DB256FDA6700EA26A2 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14989DA256FDA6700EA26A2 /* SignInViewController.swift */; };
+		D14989DD256FDA8600EA26A2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14989DC256FDA8600EA26A2 /* HomeViewController.swift */; };
+		D17CF37C2593AD110063D68B /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17CF37B2593AD110063D68B /* CollectionViewController.swift */; };
+		D17CF37E2594B12E0063D68B /* CardDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17CF37D2594B12E0063D68B /* CardDetailViewController.swift */; };
+		D18561EE257272DB00A3A5B0 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18561ED257272DB00A3A5B0 /* Utils.swift */; };
+		D1B4F87D25C1EBF900049CC6 /* CardContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B4F87C25C1EBF900049CC6 /* CardContent.swift */; };
+		D1B4F88125C1EFA700049CC6 /* RoundedCardWrapperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B4F88025C1EFA600049CC6 /* RoundedCardWrapperView.swift */; };
+		D1B4F88625C2173200049CC6 /* MySpotsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B4F88525C2173200049CC6 /* MySpotsViewController.swift */; };
+		D1B65325259B8E0300F3D64C /* CollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B65324259B8E0300F3D64C /* CollectionReusableView.swift */; };
+		D1E2957925A5E50000C66A30 /* TabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E2957825A5E50000C66A30 /* TabItem.swift */; };
+		D1E2957B25A5E55500C66A30 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E2957A25A5E55500C66A30 /* SettingsViewController.swift */; };
+		D1E2957D25A5E56700C66A30 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E2957C25A5E56700C66A30 /* ProfileViewController.swift */; };
+		D1E2958125A5E67E00C66A30 /* TabNavigationMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E2958025A5E67E00C66A30 /* TabNavigationMenu.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		129C01C7FF857EBC60D4E94E /* Pods_StalKing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StalKing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2180DABDC79363BB618111E3 /* Pods-StalKing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StalKing.debug.xcconfig"; path = "Target Support Files/Pods-StalKing/Pods-StalKing.debug.xcconfig"; sourceTree = "<group>"; };
+		A13D2C78A42A38FE820ECBD7 /* Pods-StalKing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StalKing.release.xcconfig"; path = "Target Support Files/Pods-StalKing/Pods-StalKing.release.xcconfig"; sourceTree = "<group>"; };
+		D113731D258231BD0067DE94 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D113731F258275810067DE94 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D116054A25C21F4D00AF1F2C /* SpinnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerViewController.swift; sourceTree = "<group>"; };
+		D116054D25C2294900AF1F2C /* CollectionViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewControllerExtension.swift; sourceTree = "<group>"; };
+		D116054F25C22B0200AF1F2C /* ProfileViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewControllerExtension.swift; sourceTree = "<group>"; };
+		D116055125C23DAF00AF1F2C /* DbHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DbHelper.swift; sourceTree = "<group>"; };
+		D128A088259CD30100FA1D4D /* AddNewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewViewController.swift; sourceTree = "<group>"; };
+		D128A08B259DE7B100FA1D4D /* HeaderViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderViewDelegate.swift; sourceTree = "<group>"; };
+		D141AAE52593A6F500850390 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		D14989C1256FD9A100EA26A2 /* StalKing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StalKing.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D14989C4256FD9A100EA26A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D14989C6256FD9A100EA26A2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D14989C8256FD9A100EA26A2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D14989CB256FD9A100EA26A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D14989CD256FD9A400EA26A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D14989D0256FD9A400EA26A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D14989D2256FD9A400EA26A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D14989D8256FDA3F00EA26A2 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		D14989DA256FDA6700EA26A2 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		D14989DC256FDA8600EA26A2 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		D17CF37B2593AD110063D68B /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		D17CF37D2594B12E0063D68B /* CardDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailViewController.swift; sourceTree = "<group>"; };
+		D18561ED257272DB00A3A5B0 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		D1B4F87C25C1EBF900049CC6 /* CardContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardContent.swift; sourceTree = "<group>"; };
+		D1B4F88025C1EFA600049CC6 /* RoundedCardWrapperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCardWrapperView.swift; sourceTree = "<group>"; };
+		D1B4F88525C2173200049CC6 /* MySpotsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySpotsViewController.swift; sourceTree = "<group>"; };
+		D1B65324259B8E0300F3D64C /* CollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionReusableView.swift; sourceTree = "<group>"; };
+		D1E2957825A5E50000C66A30 /* TabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItem.swift; sourceTree = "<group>"; };
+		D1E2957A25A5E55500C66A30 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		D1E2957C25A5E56700C66A30 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		D1E2958025A5E67E00C66A30 /* TabNavigationMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabNavigationMenu.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D14989BE256FD9A100EA26A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41CA9268B3811CA57510B168 /* Pods_StalKing.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5BEAC963BD371155F92E9956 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				129C01C7FF857EBC60D4E94E /* Pods_StalKing.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D116054C25C228E500AF1F2C /* Collection */ = {
+			isa = PBXGroup;
+			children = (
+				D128A088259CD30100FA1D4D /* AddNewViewController.swift */,
+				D17CF37D2594B12E0063D68B /* CardDetailViewController.swift */,
+				D17CF37B2593AD110063D68B /* CollectionViewController.swift */,
+				D116054D25C2294900AF1F2C /* CollectionViewControllerExtension.swift */,
+			);
+			path = Collection;
+			sourceTree = "<group>";
+		};
+		D128A08A259DE73D00FA1D4D /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				D128A08B259DE7B100FA1D4D /* HeaderViewDelegate.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		D141AAE425939FD800850390 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D141AAE52593A6F500850390 /* CardView.swift */,
+				D1B65324259B8E0300F3D64C /* CollectionReusableView.swift */,
+				D1B4F88025C1EFA600049CC6 /* RoundedCardWrapperView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D14989B8256FD9A100EA26A2 = {
+			isa = PBXGroup;
+			children = (
+				D14989C3256FD9A100EA26A2 /* StalKing */,
+				D14989C2256FD9A100EA26A2 /* Products */,
+				FDB1A6421F4C7B287ABF46EB /* Pods */,
+				5BEAC963BD371155F92E9956 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D14989C2256FD9A100EA26A2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D14989C1256FD9A100EA26A2 /* StalKing.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D14989C3256FD9A100EA26A2 /* StalKing */ = {
+			isa = PBXGroup;
+			children = (
+				D1EF97D025C0645C00902E66 /* Models */,
+				D128A08A259DE73D00FA1D4D /* Protocols */,
+				D141AAE425939FD800850390 /* Views */,
+				D18561EC257271B100A3A5B0 /* Helpers */,
+				D14989DE256FDAA200EA26A2 /* ViewControllers */,
+				D14989C4256FD9A100EA26A2 /* AppDelegate.swift */,
+				D14989C6256FD9A100EA26A2 /* SceneDelegate.swift */,
+				D14989CA256FD9A100EA26A2 /* Main.storyboard */,
+				D14989CD256FD9A400EA26A2 /* Assets.xcassets */,
+				D14989CF256FD9A400EA26A2 /* LaunchScreen.storyboard */,
+				D14989D2256FD9A400EA26A2 /* Info.plist */,
+				D113731D258231BD0067DE94 /* GoogleService-Info.plist */,
+			);
+			path = StalKing;
+			sourceTree = "<group>";
+		};
+		D14989DE256FDAA200EA26A2 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D116054C25C228E500AF1F2C /* Collection */,
+				D1B4F88425C2170900049CC6 /* Profile */,
+				D1B4F88325C216F800049CC6 /* Settings */,
+				D1B4F88225C216D900049CC6 /* MySpots */,
+				D14989DC256FDA8600EA26A2 /* HomeViewController.swift */,
+				D14989DA256FDA6700EA26A2 /* SignInViewController.swift */,
+				D14989D8256FDA3F00EA26A2 /* SignUpViewController.swift */,
+				D14989C8256FD9A100EA26A2 /* ViewController.swift */,
+				D116054A25C21F4D00AF1F2C /* SpinnerViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		D18561EC257271B100A3A5B0 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				D18561ED257272DB00A3A5B0 /* Utils.swift */,
+				D113731F258275810067DE94 /* Constants.swift */,
+				D1E2957825A5E50000C66A30 /* TabItem.swift */,
+				D1E2958025A5E67E00C66A30 /* TabNavigationMenu.swift */,
+				D116055125C23DAF00AF1F2C /* DbHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		D1B4F88225C216D900049CC6 /* MySpots */ = {
+			isa = PBXGroup;
+			children = (
+				D1B4F88525C2173200049CC6 /* MySpotsViewController.swift */,
+			);
+			path = MySpots;
+			sourceTree = "<group>";
+		};
+		D1B4F88325C216F800049CC6 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				D1E2957A25A5E55500C66A30 /* SettingsViewController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		D1B4F88425C2170900049CC6 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				D1E2957C25A5E56700C66A30 /* ProfileViewController.swift */,
+				D116054F25C22B0200AF1F2C /* ProfileViewControllerExtension.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		D1EF97D025C0645C00902E66 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D1B4F87C25C1EBF900049CC6 /* CardContent.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FDB1A6421F4C7B287ABF46EB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2180DABDC79363BB618111E3 /* Pods-StalKing.debug.xcconfig */,
+				A13D2C78A42A38FE820ECBD7 /* Pods-StalKing.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D14989C0256FD9A100EA26A2 /* StalKing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D14989D5256FD9A400EA26A2 /* Build configuration list for PBXNativeTarget "StalKing" */;
+			buildPhases = (
+				E547C5C8E3154F5640DCE115 /* [CP] Check Pods Manifest.lock */,
+				D14989BD256FD9A100EA26A2 /* Sources */,
+				D14989BE256FD9A100EA26A2 /* Frameworks */,
+				D14989BF256FD9A100EA26A2 /* Resources */,
+				3BD782E95FB4FBC2E824D0E2 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StalKing;
+			productName = StalKing;
+			productReference = D14989C1256FD9A100EA26A2 /* StalKing.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D14989B9256FD9A100EA26A2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = "Adrian Oleszczak";
+				TargetAttributes = {
+					D14989C0256FD9A100EA26A2 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+				};
+			};
+			buildConfigurationList = D14989BC256FD9A100EA26A2 /* Build configuration list for PBXProject "StalKing" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D14989B8256FD9A100EA26A2;
+			productRefGroup = D14989C2256FD9A100EA26A2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D14989C0256FD9A100EA26A2 /* StalKing */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D14989BF256FD9A100EA26A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D14989D1256FD9A400EA26A2 /* LaunchScreen.storyboard in Resources */,
+				D113731E258231BD0067DE94 /* GoogleService-Info.plist in Resources */,
+				D14989CE256FD9A400EA26A2 /* Assets.xcassets in Resources */,
+				D14989CC256FD9A100EA26A2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3BD782E95FB4FBC2E824D0E2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StalKing/Pods-StalKing-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StalKing/Pods-StalKing-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StalKing/Pods-StalKing-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E547C5C8E3154F5640DCE115 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StalKing-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D14989BD256FD9A100EA26A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D116054B25C21F4D00AF1F2C /* SpinnerViewController.swift in Sources */,
+				D14989C9256FD9A100EA26A2 /* ViewController.swift in Sources */,
+				D1B4F88625C2173200049CC6 /* MySpotsViewController.swift in Sources */,
+				D141AAE62593A6F500850390 /* CardView.swift in Sources */,
+				D17CF37E2594B12E0063D68B /* CardDetailViewController.swift in Sources */,
+				D128A089259CD30100FA1D4D /* AddNewViewController.swift in Sources */,
+				D14989C5256FD9A100EA26A2 /* AppDelegate.swift in Sources */,
+				D1B4F87D25C1EBF900049CC6 /* CardContent.swift in Sources */,
+				D116055225C23DAF00AF1F2C /* DbHelper.swift in Sources */,
+				D14989D9256FDA3F00EA26A2 /* SignUpViewController.swift in Sources */,
+				D17CF37C2593AD110063D68B /* CollectionViewController.swift in Sources */,
+				D116054E25C2294900AF1F2C /* CollectionViewControllerExtension.swift in Sources */,
+				D1E2958125A5E67E00C66A30 /* TabNavigationMenu.swift in Sources */,
+				D116055025C22B0200AF1F2C /* ProfileViewControllerExtension.swift in Sources */,
+				D1E2957D25A5E56700C66A30 /* ProfileViewController.swift in Sources */,
+				D1E2957B25A5E55500C66A30 /* SettingsViewController.swift in Sources */,
+				D18561EE257272DB00A3A5B0 /* Utils.swift in Sources */,
+				D1E2957925A5E50000C66A30 /* TabItem.swift in Sources */,
+				D14989DB256FDA6700EA26A2 /* SignInViewController.swift in Sources */,
+				D14989C7256FD9A100EA26A2 /* SceneDelegate.swift in Sources */,
+				D128A08C259DE7B100FA1D4D /* HeaderViewDelegate.swift in Sources */,
+				D1B4F88125C1EFA700049CC6 /* RoundedCardWrapperView.swift in Sources */,
+				D1B65325259B8E0300F3D64C /* CollectionReusableView.swift in Sources */,
+				D14989DD256FDA8600EA26A2 /* HomeViewController.swift in Sources */,
+				D1137320258275810067DE94 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D14989CA256FD9A100EA26A2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D14989CB256FD9A100EA26A2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D14989CF256FD9A400EA26A2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D14989D0256FD9A400EA26A2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D14989D3256FD9A400EA26A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D14989D4256FD9A400EA26A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D14989D6256FD9A400EA26A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2180DABDC79363BB618111E3 /* Pods-StalKing.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SGJ5G246FD;
+				INFOPLIST_FILE = StalKing/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cwm.StalKing;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D14989D7256FD9A400EA26A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A13D2C78A42A38FE820ECBD7 /* Pods-StalKing.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SGJ5G246FD;
+				INFOPLIST_FILE = StalKing/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cwm.StalKing;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D14989BC256FD9A100EA26A2 /* Build configuration list for PBXProject "StalKing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D14989D3256FD9A400EA26A2 /* Debug */,
+				D14989D4256FD9A400EA26A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D14989D5256FD9A400EA26A2 /* Build configuration list for PBXNativeTarget "StalKing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D14989D6256FD9A400EA26A2 /* Debug */,
+				D14989D7256FD9A400EA26A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D14989B9256FD9A100EA26A2 /* Project object */;
+}
